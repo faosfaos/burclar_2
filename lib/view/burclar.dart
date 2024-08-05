@@ -1,11 +1,11 @@
 // ignore_for_file: must_be_immutable, unnecessary_brace_in_string_interps
-
-import 'package:burclar_2/routes/routes.dart';
-import 'package:burclar_2/utility/my_const.dart';
-import 'package:burclar_2/view_model/vm_burclar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+import '../routes/routes.dart';
+import '../utility/my_const.dart';
+import '../view_model/vm_burclar.dart';
 
 class Burclar extends StatelessWidget {
   Burclar({super.key});

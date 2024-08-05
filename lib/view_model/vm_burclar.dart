@@ -1,6 +1,6 @@
-import 'package:burclar_2/model/model_burc.dart';
-import 'package:burclar_2/utility/my_data.dart';
 import 'package:get/state_manager.dart';
+import '../model/model_burc.dart';
+import '../utility/my_data.dart';
 
 class VmBurclar extends GetxController {
   var burclar = <ModelBurc>[].obs;
