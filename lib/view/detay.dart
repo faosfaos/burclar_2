@@ -31,7 +31,7 @@ class Detay extends StatelessWidget {
           return SliverAppBar(
             expandedHeight: 250,
             pinned: true,
-            backgroundColor: vmDetay.appColor.value,
+            backgroundColor: vmDetay.appBarColor.value,
             flexibleSpace: FlexibleSpaceBar(
               title: "${burc.isim} Özellikleri".text.make(),
               //centerTitle: true,

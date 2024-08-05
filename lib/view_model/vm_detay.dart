@@ -8,11 +8,11 @@ import '../model/model_burc.dart';
 import '../utility/my_const.dart';
 
 class VmDetay extends GetxController {
-  var appColor = Rxn<Color>();
+  var appBarColor = Rxn<Color>();
 
   void rengiBul(ModelBurc burc) async {
     PaletteGenerator generator = await PaletteGenerator.fromImageProvider(
         AssetImage("${imagePath}${burc.buyukResim}"));
-    appColor.value = generator.dominantColor!.color;
+    appBarColor.value = generator.dominantColor!.color;
   }
 }
