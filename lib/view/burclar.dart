@@ -38,7 +38,7 @@ class Burclar extends StatelessWidget {
       itemBuilder: (context, index) {
         return _buildListTile(index);
       },
-      itemCount: 12,
+      itemCount: vmBurclar.burclar.length,
     );
   }
 
