@@ -1,11 +1,11 @@
 // ignore_for_file: must_be_immutable, unnecessary_brace_in_string_interps
 
+import 'package:burclar_2/utility/my_const.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../model/model_burc.dart';
-import '../utility/my_const.dart';
 import '../view_model/vm_detay.dart';
 
 class Detay extends StatelessWidget {
@@ -36,7 +36,7 @@ class Detay extends StatelessWidget {
               title: "${burc.isim} Özellikleri".text.make(),
               //centerTitle: true,
               background: Image.asset(
-                "${imagePath}${burc.buyukResim}",
+                "${AppProperty.imagePath}${burc.buyukResim}",
                 fit: BoxFit.cover,
               ),
             ),

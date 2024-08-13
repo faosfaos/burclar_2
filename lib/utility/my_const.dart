@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
-String imagePath = "assets/images/";
-Color mainColor = Colors.pink;
-Color? subColor = Colors.pink[400];
+abstract class AppProperty {
+  static const mainColor = Colors.pink;
+  static final subColor = Colors.pink[400];
+  static const imagePath = "assets/images/";
+}

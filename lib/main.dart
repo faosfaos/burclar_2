@@ -17,16 +17,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: mainColor),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppProperty.mainColor),
         useMaterial3: false,
-        cardTheme: CardTheme(
+        cardTheme: const CardTheme(
           elevation: 8,
           shape: RoundedRectangleBorder(
-            borderRadius: const BorderRadius.all(
+            borderRadius: BorderRadius.all(
               Radius.circular(24),
             ),
             side: BorderSide(
-              color: mainColor,
+              color: AppProperty.mainColor,
               width: 2,
             ),
           ),

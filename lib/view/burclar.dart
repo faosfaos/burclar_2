@@ -50,12 +50,12 @@ class Burclar extends StatelessWidget {
         onTap: () {
           Get.toNamed(Routes.Detay, arguments: burc);
         },
-        leading: Image.asset("${imagePath}${burc.kucukResim}"),
+        leading: Image.asset("${AppProperty.imagePath}${burc.kucukResim}"),
         title: burc.isim.text.bold.xl3.make(),
-        subtitle: burc.tarih.text.bold.color(subColor).make(),
+        subtitle: burc.tarih.text.bold.color(AppProperty.subColor).make(),
         trailing: Icon(
           Icons.arrow_forward,
-          color: subColor,
+          color: AppProperty.subColor,
         ),
       ),
     );

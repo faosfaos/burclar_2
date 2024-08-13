@@ -12,7 +12,7 @@ class VmDetay extends GetxController {
 
   void rengiBul(ModelBurc burc) async {
     PaletteGenerator generator = await PaletteGenerator.fromImageProvider(
-        AssetImage("${imagePath}${burc.buyukResim}"));
+        AssetImage("${AppProperty.imagePath}${burc.buyukResim}"));
     appBarColor.value = generator.dominantColor!.color;
   }
 }
