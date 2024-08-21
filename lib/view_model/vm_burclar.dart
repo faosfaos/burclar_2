@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:get/state_manager.dart';
 import '../model/model_burc.dart';
 import '../utility/my_data.dart';
@@ -6,6 +8,10 @@ class VmBurclar extends GetxController {
   var burclar = <ModelBurc>[].obs;
   VmBurclar() {
     _burclariEkle();
+  }
+
+  void benimButtonumTiklandiginda() {
+    print("Benim Buttona tıklandı");
   }
 
   void _burclariEkle() {

@@ -1,4 +1,5 @@
 // ignore_for_file: must_be_immutable, unnecessary_brace_in_string_interps
+import 'package:burclar_2/utility/my_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -13,14 +14,24 @@ class Burclar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: "- BURÇLAR -"
-              .text
-              .xl3
-              .shadow(2, 2, 1, Colors.black)
-              .makeCentered(),
-        ),
-        body: _buildBody());
+      appBar: AppBar(
+        title:
+            "- BURÇLAR -".text.xl3.shadow(2, 2, 1, Colors.black).makeCentered(),
+      ),
+      body: _buildBody(),
+      bottomNavigationBar: _buildBottomNavigationBar(context),
+    );
+  }
+
+  Widget _buildBottomNavigationBar(BuildContext context) {
+    return MyElevatedBotton(
+      onPressed: vmBurclar.benimButtonumTiklandiginda,
+      text: "Benim Buttonum",
+      bold: true,
+      backgroundColor: AppProperty.subColor,
+      fontSize: 22,
+      textColor: Colors.grey,
+    ).box.color(AppProperty.mainColor).p12.make();
   }
 
   Widget _buildBody() {
